@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+      .navbar {
+        margin-bottom: 0;
+        border-radius: 0;
+      }
+
+      .row.content {
+        height: 450px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target="#myNavbar"
+          >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Oceanic Data Explorer</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Ocean Conditions</a></li>
+            <li><a href="#">Endangered Species</a></li>
+            <li><a href="#">Conservation Projects</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="#"
+                ><span class="glyphicon glyphicon-log-in"></span> Login</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="">
+      <div class="row content">
+        <div class="col-sm-2"></div>
+
+        <div class="col-sm-8 text-left">
+          <div class="border border-warning">
+            <h1>Filtros</h1>
+
+            <select name="regiao" id="regiao">
+              <option value="0" disabled selected>Região</option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+            </select>
+
+            <select name="especies" id="especies">
+              <option value="0" disabled selected>Espécies</option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+            </select>
+            <select name="status" id="status">
+              <option value="0" disabled selected>Status de Conservação</option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+            </select>
+            <select name="temperaturaAgua" id="temperaturaAgua">
+              <option value="0" disabled selected>Temperatura da Água</option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+            </select>
+            <select name="ph" id="ph">
+              <option value="0" disabled selected>pH</option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+            </select>
+            <select name="nivelPoluicao" id="nivelPoluicao">
+              <option value="0" disabled selected>Nível de Poluição</option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+            </select>
+          </div>
+          <hr />
+          <div class="">
+            <h2>Tabela de Dados</h2>
+            <p>Informações sobre Oceanos</p>
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Região</th>
+                  <th>Espécies</th>
+                  <th>Status de Conservação</th>
+                  <th>Temperatura da Água</th>
+                  <th>pH</th>
+                  <th>Nível de Poluição</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-sm-2"></div>
+      </div>
+    </div>
+  </body>
+</html>
