@@ -2,11 +2,12 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { Ocean } from '../../interfaces/Ocean';
 import { OceanService } from '../../services/ocean.service';
+import { AppComponent } from '../../app.component';
 
 @Component({
   selector: 'app-ocean',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, AppComponent],
   templateUrl: './ocean.component.html',
   styleUrl: './ocean.component.css',
 })
