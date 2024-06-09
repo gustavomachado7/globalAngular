@@ -1,8 +1,7 @@
 export interface Ocean {
-  //id: string;
   regiao: string;
   temperaturaAgua: number;
-  ph: number;
-  nivelPoluicao: number;
+  pH: number;
+  nivelPoluicao: string;
   especies: [{ nome: string; status: string }];
 }

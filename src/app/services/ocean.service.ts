@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root',
 })
 export class OceanService {
-  private oceansUrl = 'https://fiap-3sis-gs-20241.azurewebsites.net/OceanData?especie=Tartaruga-verde&phMin=8&pagina=1&qtde=20';
+  private oceansUrl = 'https://fiap-3sis-gs-20241.azurewebsites.net/OceanData';
   constructor(private http: HttpClient) {}
 
   oceans: Ocean[] = [];
@@ -19,5 +19,4 @@ export class OceanService {
   adicionar(ocean: Ocean) {
     this.oceans.push(ocean);
   }
-
 }
